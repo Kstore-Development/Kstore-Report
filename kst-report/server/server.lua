@@ -8,8 +8,6 @@ local Proxy = module("vrp", "lib/Proxy")
 
 vRPclient = Tunnel.getInterface("vRP", "kst-report") 
 vRP = Proxy.getInterface("vRP")
-elseif Framework == 'ESX' then
-    local ESX = exports['es_extended']:getSharedObject()
 end
 
 
@@ -18,9 +16,8 @@ RegisterNetEvent('SendInfoToServer', function(input)
     local source = source
     local user_id = vRP.getUserId({source})
     SendToDiscord(16753920, "Kstore-log", 'id: ' ..user_id.. ' sendte en report: ' ..input, "Made by Kstore - K1anTheDev", Config.Webhook)
-    elseif Framework == 'ESX' then
+    elseif Framework == 'STANDALONE' then
         local source = source
-        -- local user_id = ESX.GetPlayerFromId(source)
         local steam = GetPlayerName(PlayerId())
         SendToDiscord(16753920, "Kstore-log", 'steam navn: ' ..steam.. ' sendte en report: ' ..input, "Made by Kstore - K1anTheDev", Config.Webhook)
     end
