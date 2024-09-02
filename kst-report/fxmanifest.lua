@@ -12,12 +12,12 @@ ui_page 'html/index.html'
 -- ui_page 'http://localhost:5173/' --for dev
 
 client_script {
-  --"lib/Proxy.lua", FJERN -- HVIS DU BRUGER VRP
-  --"lib/Tunnel.lua", FJERN -- HVIS DU BRUGER VRP
+  --"lib/Proxy.lua", FJERN -- HVIS DU BRUGER VRP !!! BLIVER IKKE BRUGT LIGE PT
+  --"lib/Tunnel.lua", FJERN -- HVIS DU BRUGER VRP !!! BLIVER IKKE BRUGT LIGE PT
   'client/**',
 }
 server_script {
-  -- "@vrp/lib/utils.lua", FJERN -- HVIS DU BRUGER VRP
+  -- "@vrp/lib/utils.lua", FJERN -- HVIS DU BRUGER VRP !!! BLIVER IKKE BRUGT LIGE PT
   "server/**",
   }
 shared_script {
