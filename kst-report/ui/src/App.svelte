@@ -8,7 +8,7 @@
     import { SendNUI } from '@utils/SendNUI'
     let input
 
-	$RESOURCE_NAME = 'Kst-report' // Change this to your resource name (case sensitive)
+	$RESOURCE_NAME = 'Kst-report'
 </script>
 
 <VisibilityProvider>
